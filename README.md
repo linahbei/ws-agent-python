@@ -1,8 +1,8 @@
 # Web Service Agent
 
-File based and semaphore-like web service (WS) requesting agent for legacy code project using, feature extension, etc.
+File based and semaphore-like requesting agent of web service (WS) for legacy project using, feature extension, etc.
 
---
+---
 
 ## Project and App layout
 
@@ -41,11 +41,10 @@ The based URLs of WS are configured on ``config.json``. The layout of file as th
 {
     "lab":{
         "ws_addr": "{server address}",
-        "ws_port": {port ID},
-        "ws_timeout": {timeout seconds}
+        "ws_port": {port},
+        "ws_timeout": {seconds}
     },
     "prod":{
-        ...
     }
 }
 ```
@@ -57,17 +56,17 @@ The based URLs of WS endpoints are configured in ``web_services.json``. The layo
 ```json
 {
     "lab":{
-        "{endpoint}":{
+        "{endpoint1}":{
             "endpoint": "/v0.1/BookServices.asmx",
             "method": "POST",
             "http_headers": {
                 "Content-Type": "text/xml;charset=utf-8"
             }
         },
-        ...
+        "{endpoint2}":{
+        }
     },
     "prod":{
-        ...
     }
 }
 ```
