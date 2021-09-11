@@ -27,6 +27,8 @@ File based and semaphore-like requesting agent of web service (WS) for legacy pr
             Used and saved requesting to WS **XML escape encoded** data
        /--- response file
             Used and saved responsed from WS **XML escape decoded** data
+       /--- status file
+            HTTP status code result from WS
   /--- {endpoint} directory
        ...
 ```
